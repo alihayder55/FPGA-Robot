@@ -22,3 +22,46 @@ The algorithm can be implemented using a finite state machine, which has a set o
 
 ![image](https://github.com/alihayder55/FPGA-Robot/assets/156635408/2425a405-3d40-4881-8576-396dd2d8a79c)
 
+### Robot movement
+The robot's movements in this project are relatively simple and consist of moving forward, turning left, 
+and turning right. The movement is controlled by the 4-channel DC motor driver and the 4 DC motors 
+that power the robot's wheels. The speed and direction of each motor can be independently controlled, 
+allowing for precise movement and turning.
+The motor driver used in this project has two pins for each motor. One pin is used to control the direction 
+of the motor, while the other pin is used to control the speed of the motor and to turn it off. This allows 
+for precise control over the movement of the robot, enabling it to move in any direction and turn on the 
+spot. The direction pin controls whether the motor rotates clockwise or counterclockwise, while the 
+speed control pin is used to adjust the speed of the motor. When the speed control pin is set to zero, the 
+motor will stop rotating. By varying the speed and direction of each motor, the robot can be made to 
+move in any direction, turn left or right, or rotate on 360 degrees. As in Figure 5. (a) to move forward, all 
+four wheels rotate in the same direction. When turning left, the wheels on the right side of the robot 
+rotate in the opposite direction to the wheels on the left side, causing the robot to turn left. Similarly, 
+when turning right, the wheels on the left side of the robot rotate in the opposite direction to the wheels 
+on the right side, causing the robot to turn right.
+
+![image](https://github.com/alihayder55/FPGA-Robot/assets/156635408/d7f3ec99-0fbc-483c-a30f-9fb70df71c53)
+## 3. Results and Discussion
+The robot's movement control system functioned as expected, allowing the robot to move forward and 
+turn left and right with ease. The ultrasonic sensor system provided accurate and reliable obstacle 
+detection, enabling the robot to navigate through a maze in real-time without any errors or collisions.
+During testing, the robot was able to successfully solve a maze and reach the end without any issues. The 
+high-speed and accurate movement control system, combined with the reliable obstacle detection 
+provided by the ultrasonic sensors, allowed the robot to navigate through the maze quickly and 
+efficiently.
+As we can see in Figure 7, the RTL analysis of the project shows that only a small portion of the board 
+was used, indicating efficient design and resource utilization. This makes the implementing of the project 
+can be in smaller chips, when it is implemented on integrated circuits. Also the small use of the FPGA 
+board leads to the ability to design the robot to do more tasks while solving the maze. Aside from that, 
+the memory used from the board and the logic element used is also small percentage of the resource that 
+are available in the board. This can be seen in Figure 8
+![image](https://github.com/alihayder55/FPGA-Robot/assets/156635408/1fd0e759-f85b-4bc9-80a7-60ffb09f1ffa)
+
+## 4. Conclusion
+As real time processing tasks are trending nowadays, the idea for developing an obstacle avoidance 
+mobile robot using a FPGA chip seemed to be a good idea. FPGA chips are better at handling concurrent 
+tasks in real time activities. But it is more complex in terms of programming than a microprocessor. Even 
+though this project handle only 5 input sensors and 4 motors, the FPGA chip can handle a lot more 
+sensors and motors at the same time without any delay. The mobile robot in this mini project takes 5 
+inputs from the ultrasonic sensors and according to a rule base the motors are controlled. The mobile 
+robot operated successfully at avoiding any obstacle.
+
