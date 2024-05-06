@@ -19,4 +19,5 @@ To implement the algorithm, the robot follows a set of predefined rules that dic
 
 The algorithm can be implemented using a finite state machine, which has a set of states that correspond to different robot behaviors, as shown in Figure 1. In the initial state, the robot is positioned next to the wall on its right side. As the robot moves through the maze, it transitions between states based on its sensor readings. For example, if the robot detects an obstacle in front of it, it transitions to a state where it turns right. If it detects a gap in the wall on its right side, it transitions to a state where it turns left and moves forward until it detects the wall again.
 
+![image](https://github.com/alihayder55/FPGA-Robot/assets/156635408/2425a405-3d40-4881-8576-396dd2d8a79c)
 
