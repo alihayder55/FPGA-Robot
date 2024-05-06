@@ -1,4 +1,5 @@
 # 3D Maze Solver using FPGA Board
+![image](https://github.com/alihayder55/FPGA-Robot/assets/156635408/19ce213e-1deb-4dbc-a412-5d113e1746b1)
 
 ## Abstract
 Mobile robots have the potential to transform industries by autonomously navigating complex environments like mazes. However, enabling them to solve mazes introduces challenges in obstacle detection and avoidance. Traditional methods using lidar and camera detection with deep learning may be limited in dealing with complex maze environments because they require more resources. This research aims to develop efficient algorithms for maze-solving robots, addressing these challenges and improving their obstacle detection and avoidance capabilities.
